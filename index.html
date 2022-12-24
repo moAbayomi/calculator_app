@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" class="css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="calc-body">
+        <header class="padding-block-100">
+          <h1>calc</h1>
+          <div class="theme flex">
+            <p>theme</p>
+            <div class="toggle-btns">
+              <button class="toggle" data-theme="1"></button
+              ><button class="toggle" data-theme="2"></button
+              ><button class="toggle" data-theme="3"></button>
+            </div>
+          </div>
+
+          <!-- main key 1 => reset and del buttons -->
+          <!-- main key 2 => equals button -->
+          <!-- main key 3 => all other buttons -->
+        </header>
+        <div class="screen | padding-block-100">0</div>
+        <div class="calculator grid">
+          <div class="keypad number seven">7</div>
+          <div class="keypad number eight">8</div>
+          <div class="keypad number nine">9</div>
+          <div class="mainkey1 | keypad del" data-action="delete">del</div>
+          <div class="keypad number four">4</div>
+          <div class="keypad number five">5</div>
+          <div class="keypad number six">6</div>
+          <div class="keypad add arith" data-action="add">+</div>
+          <div class="keypad number one">1</div>
+          <div class="keypad number two">2</div>
+          <div class="keypad number three">3</div>
+          <div class="keypad minus arith" data-action="subtract">-</div>
+          <div class="keypad decimal" data-action="decimal">.</div>
+          <div class="keypad number zero">0</div>
+          <div class="keypad divide arith" data-action="divide">/</div>
+          <div class="keypad multiplicate arith" data-action="multiply">*</div>
+          <div class="mainkey1 | keypad reset" data-action="clear">reset</div>
+          <div class="mainkey2 | keypad equals" data-action="equals">=</div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
